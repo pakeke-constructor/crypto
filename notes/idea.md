@@ -16,7 +16,6 @@ BR(M) = max(0, 1 - (M / K)) / 2
 This provides a linear burn ratio from market cap 0 -> K.
 When market cap is >= K, no burn is applied.
 When market cap is 0, 50% burn is applied
-Productivity — Today at 12:27 PM
 The question is, how would we implement this. 
 By nature, market data is centralized. We need a good way to decentralize it.
 Without a good system, POS nodes could be incentivized to lie about the market cap ratio when trading, as they could get a higher cut. 
@@ -32,7 +31,7 @@ Let a node's stated burn ratio be `Gb`.  (clamped from 0-1 to prevent tampering 
 Let `BR` be the function from before.
 The burn rate for individual nodes can then be given by:
 ```lua
-BI = BR(Ab) - |Gb - Ab|
+BI = BR(Ab) + |Gb - Ab|
 ```
 Thus, the more wrong a node is in their stated market cap, the more burn penalty they are likely to recieve.
 Therefore, it is in a rational node's best interest to abide to the protocol to minimize the chance of them having extra coins burned.

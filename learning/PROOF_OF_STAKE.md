@@ -17,15 +17,12 @@ If a transaction is signed by the majority of coinholders, it is recognized as v
 ### TO-LEARN:
 How are the transactions synchronized across blocks?
 Is each individual transaction signed by the majority coinholders?
-
+What incentivizes coinholders to regulate small transactions?
 
 
 
 
 Each major coinholder is incentivized to cooperate with each other major coinholder,
 because they want to keep the transactions legit, and encourage investors.
-
-
-
 
 

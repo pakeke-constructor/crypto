@@ -31,7 +31,7 @@ Let a node's stated burn ratio be `Gb`.  (clamped from 0-1 to prevent tampering 
 Let `BR` be the function from before.
 The burn rate for individual nodes can then be given by:
 ```lua
-BI = BR(Ab) + |Gb - Ab|
+BI(Ab, Gb) = BR(Ab) + |Gb - Ab|
 ```
 Thus, the more wrong a node is in their stated market cap, the more burn penalty they are likely to recieve.
 Therefore, it is in a rational node's best interest to abide to the protocol to minimize the chance of them having extra coins burned.

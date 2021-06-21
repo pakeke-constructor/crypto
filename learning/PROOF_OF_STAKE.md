@@ -14,7 +14,10 @@ The difference is, each major coinholder will accept (groups of) transactions on
 with their private key. 
 If a transaction is signed by the majority of coinholders, it is recognized as valid.
 
-### TO-LEARN: 
+### TO-LEARN:
+How are the transactions synchronized across blocks?
+Is each individual transaction signed by the majority coinholders?
+
 
 
 

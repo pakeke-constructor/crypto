@@ -6,7 +6,7 @@ import sys
 import secrets
 from numba import jit
 from cryptography.hazmat.primitives.asymmetric import ed25519 as ed
-
+from shove import Shove
 
 BITS = 256
 
@@ -73,7 +73,7 @@ class Account(object):
             raise RuntimeError("Attempted to sign a message from an unowned account")
         return self.private.sign(message)
 
-    def is_verified(self, transaction : , signature):
+    def is_verified(self, transaction, signature):
         '''
         TODO: this doesnt work lol, need to do more casting and stuff
         '''

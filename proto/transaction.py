@@ -13,8 +13,6 @@ Also tuples can be packed easily
 
 '''
 
-
-import account
 import tools
 
 import secrets
@@ -39,7 +37,7 @@ def unpack(packed):
     '''
     return packed
 
-
-
-
-
+def update(txn: tuple):
+    '''
+    updates account objects in memory
+    '''

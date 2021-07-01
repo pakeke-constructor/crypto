@@ -41,8 +41,3 @@ cost of validating a block that is invalid. Thus, it is in the miner's interest 
 
 
 
-
-Lets say Alice sends 5 btc to Bob, but wants to cheat!! 
-  Bob
-
-
